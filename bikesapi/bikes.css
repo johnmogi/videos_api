@@ -1,0 +1,21 @@
+.wrapper{
+    margin: 0 auto;
+    max-width:450px;
+}
+html{
+    min-height:450px;
+}
+
+#serchdb {
+    background: #bcbcbc;
+    padding: 15px;
+    display: block;
+    width: 185px;
+    text-align: center;
+    margin: 10px auto;
+}
+input{
+    display: block;
+    width: 80%; 
+    padding: 15px;
+}
