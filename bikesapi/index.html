@@ -19,11 +19,46 @@
 </form>
 
 </div>
+<!-- // yes I know this sucks -->
 
 
+<script src="jquery-3.4.1.js"></script>
     <script src="networks.js"></script>
     <script src="bikesModel.js"></script>
-    <script src="jquery-3.4.1.js"></script>
+  
+<script>
+//         var networks = bcCompanies.networks
+
+// // var cities = bcCompanies.networks.city
+
+// const cityesMapped = networks.map((city2) => {
+//         const {city} = city2;
+//         return city2;
+//       });
+
+// const citiesMapped = bcCompanies.filter(({ city }) => city > 18 );
+
+
+var networks = bcCompanies.networks
+
+
+
+      const cityesMapped = function cityesMapped(bcCompanies) {
+        const mappedcities = bcCompanies.map((network, index) => {
+            const {
+                company,
+                city
+            } = city;
+            return {
+                company,
+                city
+            }
+      
+        });
+    };
+
+        </script>
+
 
     </body>
 </html>
