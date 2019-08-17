@@ -5,20 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>city bikes</title>
+    <link rel="stylesheet" href="bikes.css">
 </head>
 <body>
     
-
+<div class="wrapper">
 <form id="straightforward">
 <input type="text" id="callforbike">
 <input type="select" placeholder="Choose a company" id="companyChoose">
 
-<a class="button" id="serchdb">Search Database</a>
+<a href="#" class="button" id="serchdb">Search Database</a>
 
 </form>
 
-    <script src="networks.json"></script>
-    <script src="bikesModel.json"></script>
+</div>
+<!-- // yes I know this sucks -->
+
+
+<script src="jquery-3.4.1.js"></script>
+    <script src="networks.js"></script>
+    <script src="bikesModel.js"></script>
+  
+<script>
+//         var networks = bcCompanies.networks
+
+// // var cities = bcCompanies.networks.city
+
+// const cityesMapped = networks.map((city2) => {
+//         const {city} = city2;
+//         return city2;
+//       });
+
+// const citiesMapped = bcCompanies.filter(({ city }) => city > 18 );
+
+
+
+// const cityesMapped = bcCompanies.map(company => company.city);
+
+
+        </script>
+
 
     </body>
 </html>

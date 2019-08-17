@@ -1,0 +1,50 @@
+
+// const findOneFunction = function findOne() {
+//   const oneCountry = countries.filter((country) => {
+//       let findInput = JSON.stringify(document.querySelector("#countryselect").value)
+//       let currentCountry = JSON.stringify(country.name).toLowerCase()
+//       const {
+//           name,
+//           flag
+//       } = country;
+//       console.log(currentCountry)
+//       console.log(findInput)
+//       if (currentCountry === findInput) return {
+//           countryName: name,
+//           flag
+//       }
+//   })
+//   return oneCountry
+// }
+// $("#findOne").on("click", function() {
+// const flagAndName = function flagAndName(countries) {
+//   const countryFlags = countries.map((country, index) => {
+//       const {
+//           name,
+//           flag
+//       } = country;
+//       return {
+//           name,
+//           flag
+//       }
+//   })
+// }
+// });
+
+// $("#findOne").on("click", function() {
+//   const findInfo = filteredNames.find((country, index) => {
+
+//     index == countryselect.value
+//     // const { index } = country;
+//     const { name } = country;
+//     countryselect.value = name
+//     const ctitle = $("li h2").html(name);
+//     return { name };
+
+//   }
+  
+//   )}
+
+// )
+
+  //   console.log(countryselect.value)

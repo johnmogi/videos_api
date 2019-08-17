@@ -10,9 +10,21 @@ $(document).ready(function() {
   //   a.	 Button – find all ,
   //   filter and show in the carousel only the flags of the countries whose name contain the input search
 
-  $("#findAll").on("click", function() {
-    console.log(filteredNames);
+  $("#findOne").on("click", function() {
+    findOneFunction()
+    // console.log(filteredNames);
   });
+
+  // $("#findAll").on("click", function() {
+  //   findOneFunction()
+  //   // console.log(filteredNames);
+  // });
+
+  // $("#capital").on("click", function() {
+  //   findOneFunction()
+  //   // console.log(filteredNames);
+  // });
+
 }); //drf
 
 // flags
@@ -27,14 +39,29 @@ const filteredNames = countries.map((country, index) => {
   return { name };
 });
 
+
+
 // starting with one...
+const findOneFunction = function findOne() {
+  const oneCountry = countries.find((country) => {
+    // let findInput = JSON.stringify(document.querySelector("#countryselect").value)
+    let findInput = document.querySelector("#countryselect").value
 
-$("#findOne").on("click", function() {
-  const filteredNames = countries.map((country, index) => {
-    const { name } = country;
-    const ctitle = $("li h2").html(name);
-    return { name };
-  });
-
-  //   console.log(countryselect.value);
-});
+    let currentCountry = JSON.stringify(country.name).toLowerCase()
+    const {
+    name,
+              flag
+          } = country;
+          console.log(currentCountry)
+          console.log(findInput)  
+          console.log(flag)  
+      //           if (currentCountry === findInput) return {
+      //     countryName: name,
+      //     flag
+         
+      // }
+      // debugger;
+  })
+  return oneCountry
+}
+  
