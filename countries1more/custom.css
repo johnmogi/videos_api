@@ -1,0 +1,29 @@
+.demo {
+  margin: 0 auto;
+  display: block;
+}
+ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+}
+.demo .item {
+  margin-bottom: 60px;
+}
+.content-slider li {
+  background-color: #ed3020;
+  text-align: center;
+  color: #fff;
+}
+.content-slider h3 {
+  margin: 0;
+  padding: 70px 0;
+}
+.demo {
+  width: 800px;
+}
+
+.lSSlideOuter {
+  max-width: 475px;
+  margin: 0 auto;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>countrey slider</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../src/css/lightslider.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+    <script src="../src/js/lightslider.js"></script>
+    <script src="light.js"></script>
+  </head>
+  <body>
+
+    
+        <div class="container">
+                <div class="jumbotron">
+                  <h1 class="text-center mb-3">Pick a country, any country....</h1>
+          
+                  <div class="container">
+                          <div class="row">
+                      
+                                      
+                            <div class="col">
+          
+                                  <form>
+                                          <div class="form-group">
+                                                  <label for="exampleInputPassword1">Enter your desired country</label>
+                                                  <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="countryselect"
+                                                    placeholder="Enter your desired country"
+                                                  />
+                                                </div>
+                                                <a type="button" id="findAll" class="btn btn-info">find all</a>
+                                                <a type="button" id="findOne" class="btn btn-primary">find one</a>
+                                                <a type="button" id="capital" class="btn btn-success">Capital city</a>
+                                              </div>
+                                              </form>
+                                      
+                                              
+                           
+                            <div class="col">
+                                  <form>
+                                  <div class="form-group">
+                                          <label for="exampleFormControlSelect1">countries names</label>
+                                          <select class="form-control" id="countryNames">
+                                            <option>1</option>
+                                          
+                                          </select>
+                                          <div class="form-group">
+                                                  <label for="exampleFormControlSelect1">currencies </label>
+                                                  <select class="form-control" id="currencies">
+                                                    <option>1</option>
+                                              
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              
+              
+                                           </form>
+                                        </div>
+                                      </div>
+          
+                              
+                            </div>
+                          </div>
+                        </div>
+          
+
+    <div class="demo container">
+
+      <div class="item mx-auto">
+        <div class="clearfix">
+          <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+
+            <li data-thumb="img/thumb/cS-1.jpg">
+                <h2>title</h2>
+              <img src="img/cS-1.jpg" />
+            </li>
+            <li data-thumb="img/thumb/cS-2.jpg">
+                <h2>title</h2>
+              <img src="img/cS-2.jpg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="1.js"></script>
+
+  </body>
+</html>
