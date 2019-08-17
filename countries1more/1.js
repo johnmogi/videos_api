@@ -20,10 +20,10 @@ $(document).ready(function() {
   //   // console.log(filteredNames);
   // });
 
-  // $("#capital").on("click", function() {
-  //   findOneFunction()
-  //   // console.log(filteredNames);
-  // });
+  $("#capital").on("click", function() {
+    findCapital()
+    // console.log(filteredNames);
+  });
 
 }); //drf
 
@@ -44,10 +44,9 @@ const filteredNames = countries.map((country, index) => {
 // starting with one...
 const findOneFunction = function findOne() {
   const oneCountry = countries.find((country) => {
-    // let findInput = JSON.stringify(document.querySelector("#countryselect").value)
-    let findInput = document.querySelector("#countryselect").value
-
-    let currentCountry = JSON.stringify(country.name).toLowerCase()
+    let findInput = JSON.stringify(document.querySelector("#countryselect").value)
+    let currentCountry = JSON.stringify(country.name)
+    // .toLowerCase()
     const {
     name,
               flag
@@ -55,13 +54,41 @@ const findOneFunction = function findOne() {
           console.log(currentCountry)
           console.log(findInput)  
           console.log(flag)  
-      //           if (currentCountry === findInput) return {
-      //     countryName: name,
-      //     flag
+          $( "li img" ).attr( "src", flag)
+          $( "li h2" ).text( name )
+
+                if (currentCountry === findInput) return {
+          countryName: name,
+          flag
          
-      // }
-      // debugger;
+      }
   })
   return oneCountry
 }
+
+// starting with one...
+const findCapital = function findOneCap() {
+  const oneCountry = countries.find((country) => {
+    let findInput = JSON.stringify(document.querySelector("#countryselect").value)
+
+    let CapitalCountry = JSON.stringify(country.capital)
+    let currentCountry = JSON.stringify(country.name)
+
+    // .toLowerCase()
+    const {
+    capital
+          } = country;
+          console.log(CapitalCountry)
+          $( "li h2" ).text( capital )
+         
+
+                if (currentCountry === findInput) return {
+          countryName: name,
+          countryName: capital,
+         
+      }
+  })
+  return oneCountry
+}
+  
   
