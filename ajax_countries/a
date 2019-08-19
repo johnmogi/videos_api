@@ -1,0 +1,19 @@
+   
+        function (data) {
+            // names
+            const filteredNames = countries.map((country, index) => {
+                const {
+                    capital
+                } = country;
+                return {
+                    capital
+                };
+            });
+
+        },
+
+        statusCode: {
+            404: function () {
+                alert("page not found");
+            }
+        }
