@@ -1,0 +1,27 @@
+     function getCurrency(search, callback) {
+         $.ajax({
+             url: `https://restcountries.eu/rest/v2/currency/${search}`,
+             method: "GET",
+             success: function (data) {
+                 console.log("test")
+                 callback(data)
+
+             },
+             error: function (error) {
+                 $("#stage").html("no match")
+             }
+         })
+
+     }
+
+
+     $(document).load(() => {
+         $("#stage").html(`<div class="loader"></div>`)
+         getCurrency($("#search").val(), (result) => {
+             $("#stage").html((result))
+             console.log(result)
+         })
+
+     })
+
+ }); //rf

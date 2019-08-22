@@ -1,0 +1,61 @@
+  // function makeAjaxCall(url, methodType) {
+    //     return $.ajax({
+    //         url: "https://restcountries.eu/rest/v2/all",
+    //         method: "GET",
+    //         dataType: "json",
+    //         success: function (data) {
+    //             console.log(data)
+    //             // callback(data)
+
+    //         },
+    //         error: function (error) {
+    //             $("#stage").html("no match")
+    //         }
+    //     })
+
+    // }
+
+    // makeAjaxCall();
+
+
+
+    // var findAll = $("#findAll");
+    // const findOne = $("#findOne");
+    // const capital = $("#capital");
+
+    // const countryselect = $("#countryselect");
+    // const countryNames = $("#countryNames");
+    // const currencies = $("#currencies");
+    // $("#findOne").on("click", function() {
+    //     findOneFunction()
+    //     // console.log(filteredNames);
+    //   });
+
+function retrieveLanguage(language) {
+    tempArray1 = []
+    const {
+        languages
+    } = language
+    languages.filter(item => item.name).forEach(language => {
+        const {
+            iso639_1
+        } = language
+        retrieveCountryLang(iso639_1)
+            .then(result => {
+                return result.map((item) => {
+                    const {
+                        name,
+                        flag
+                    } = item;
+                    tempArray1.push({
+                        name,
+                        flag
+                    })
+                })
+            }).then(function () {
+                deleteMulti(tempArray1)
+            })
+            .catch(tempArray2 => console.log(tempArray2))
+    })
+
+}
