@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>city bikes</title>
     <link rel="stylesheet" href="bikes.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     
 <div class="wrapper">
-<form id="straightforward">
-<input type="text" id="callforbike">
-<input type="select" placeholder="Choose a company" id="companyChoose">
-
+<form id="straightforward" class="form-group">
+        <div class="form-group">
+                <label for="city select">Choose a city</label>
+    <select class="form-control"  id="callforbike">   </select>
+    </div>
+    <div class="form-group">
+            <label for="select company">Choose a company</label>
+<select class="form-control"  placeholder="Choose a company" id="companyChoose">   </select>
+</div>
 <a href="#" class="button" id="serchdb">Search Database</a>
 
 </form>
@@ -24,7 +30,7 @@
 
 <script src="jquery-3.4.1.js"></script>
     <script src="networks.js"></script>
-    <script src="bikesModel.js"></script>
+    <script src="./bikesModel.js"></script>
   
 <script>
 //         var networks = bcCompanies.networks
